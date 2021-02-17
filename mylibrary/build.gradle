@@ -19,7 +19,7 @@ ext {
     gitUrl = ''
     githubRepository= ''
 
-    developerId = 'MaximoDouglas'
+    developerId = 'maximodouglas'
     developerName = 'Douglas Maximo'
     developerEmail = 'douglas.h.maximo@gmail.com'
 

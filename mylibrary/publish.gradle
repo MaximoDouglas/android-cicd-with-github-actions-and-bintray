@@ -32,7 +32,6 @@ install {
                     connection gitUrl
                     developerConnection gitUrl
                     url siteUrl
-
                 }
             }
         }
@@ -79,6 +78,7 @@ bintray {
         licenses = allLicenses
         publish = true
         publicDownloadNumbers = true
+        userOrg = 'douglasmaximo'
         version {
             desc = libraryDescription
         }
