@@ -3,6 +3,29 @@ plugins {
     id 'kotlin-android'
 }
 
+ext {
+    bintrayRepo = 'android-cicd-with-github-actions-and-bintray'
+    bintrayName = 'com.maximo.douglas.mylibrary'
+
+    publishedGroupId = 'com.maximo.douglas'
+    libraryName = 'mylibrary'
+    artifact = 'mylibrary'
+    libraryDescription = '.'
+    libraryVersion = '1.0.2'
+
+    siteUrl = ''
+    gitUrl = ''
+    githubRepository= ''
+
+    developerId = 'MaximoDouglas'
+    developerName = 'Douglas Maximo'
+    developerEmail = 'douglas.h.maximo@gmail.com'
+
+    licenseName = ''
+    licenseUrl = ''
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -41,4 +64,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
 }
