@@ -7,7 +7,7 @@ plugins {
 
 ext {
     bintrayRepo = 'android-cicd-with-github-actions-and-bintray'
-    bintrayName = 'com.maximo.douglas.mylibrary'
+    bintrayName = 'mylibrary'
 
     publishedGroupId = 'com.maximo.douglas'
     libraryName = 'mylibrary'
