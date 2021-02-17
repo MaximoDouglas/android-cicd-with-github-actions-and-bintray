@@ -9,7 +9,7 @@ jobs:
 
   release:
     name: Create Release
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout code
@@ -18,7 +18,7 @@ jobs:
       - name: Set release name
         run: echo ::set-env name=RELEASE_NAME::$(echo ${GITHUB_REF:11})
 
-      - name: Create Release
+      - name: Create release
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -26,13 +26,9 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ env.RELEASE_NAME }}
-          body: |
-            What is new :
-              - First Change
-              - Second Change
           draft: false
           prerelease: false
-          
+
   publish:
     name: Publish Build
     runs-on: ubuntu-latest
