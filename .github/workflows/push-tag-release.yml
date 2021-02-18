@@ -38,11 +38,9 @@ jobs:
           java-version: 1.8
       - name: Grant Permission to Execute
         run: chmod +x gradlew
-      - name: Set env
-        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Publish Library
         env:
           bintrayUser: ${{ secrets.BINTRAY_USER }}
           bintrayApiKey: ${{ secrets.BINTRAY_API_KEY }}
-          bintrayVersion: ${{ env.RELEASE_VERSION }}
+          bintrayVersion: ${{ github.ref }}
         run: ./gradlew bintrayUpload
