@@ -12,20 +12,11 @@ ext {
     publishedGroupId = 'com.maximo.douglas'
     libraryName = 'mylibrary'
     artifact = 'mylibrary'
-    libraryDescription = '.'
-    libraryVersion = '1.0.0'
-
-    siteUrl = ''
-    gitUrl = ''
-    githubRepository= ''
+    userOrganization = 'douglasmaximo'
 
     developerId = 'maximodouglas'
     developerName = 'Douglas Maximo'
     developerEmail = 'douglas.h.maximo@gmail.com'
-
-    licenseName = ''
-    licenseUrl = ''
-    allLicenses = ["Apache-2.0"]
 }
 
 android {

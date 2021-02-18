@@ -11,26 +11,13 @@ install {
                 groupId publishedGroupId
                 artifactId artifact
                 name libraryName
-                description libraryDescription
-                url siteUrl
 
-                licenses {
-                    license {
-                        name licenseName
-                        url licenseUrl
-                    }
-                }
                 developers {
                     developer {
                         id developerId
                         name developerName
                         email developerEmail
                     }
-                }
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
                 }
             }
         }
@@ -72,15 +59,8 @@ bintray {
     pkg {
         repo = bintrayRepo
         name = bintrayName
-        desc = libraryDescription
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = allLicenses
         publish = true
         publicDownloadNumbers = true
-        userOrg = 'douglasmaximo'
-        version {
-            desc = libraryDescription
-        }
+        userOrg = userOrganization
     }
 }
