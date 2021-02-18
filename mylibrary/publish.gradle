@@ -1,7 +1,6 @@
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
-version = libraryVersion
 group = publishedGroupId
 
 install {
@@ -67,6 +66,7 @@ artifacts {
 bintray {
     user = System.getenv("bintrayUser")
     key = System.getenv("bintrayApiKey")
+    version = System.getenv("bintrayVersion")
 
     configurations = ['archives']
     pkg {
