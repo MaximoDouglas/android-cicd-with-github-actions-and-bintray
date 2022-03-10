@@ -21,7 +21,6 @@ allprojects {
         maven {
             url  "https://douglasmaximo.bintray.com/android-cicd-with-github-actions-and-bintray"
         }
-
     }
 }
 
